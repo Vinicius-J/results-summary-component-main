@@ -70,8 +70,8 @@ h1{
 }
 
 .card-result .points{
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
     margin: 0 auto;
     border-radius: 50%;
     background-image: linear-gradient(180deg, var(--Violet-blue-circle), var(--Persian-blue-circle));
@@ -117,4 +117,71 @@ h1{
     border-radius: 2rem;
     color: var(--White);
     transition: all 1s ease-in-out;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual{
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    margin: 0 0 1.5rem 0;
+    border-radius: 0.8rem;
+    cursor: default;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%,10%);
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%,10%);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%,10%);
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%,10%);
+    margin-bottom: 3rem;
+}
+
+.reaction p #pont-reaction,
+.memory p #pont-memory,
+.verbal p #pont-verbal,
+.visual p #pont-visual{
+    color: var(--Dark-gray-blue);
+}
+
+.reaction h4{
+    font-size: 1.8rem;
+    color: var(--Light-red);
+}
+
+.memory h4{
+    font-size: 1.8rem;
+    color: var(--Orangey-yellow);
+}
+
+.verbal h4{
+    font-size: 1.8rem;
+    color: var(--Green-teal);
+}
+
+.visual h4{
+    font-size: 1.8rem;
+    color: var(--Cobalt-blue);
+}
+
+.reaction .img-reaction,
+.memory .img-memory,
+.verbal .img-verbal,
+.visual .img-visual{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
 }
