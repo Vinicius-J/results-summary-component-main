@@ -32,7 +32,7 @@ p{
     font-size: 1.8rem;
 }
 body{
-    min-height: 100vh;
+    min-height: 100dvh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -40,13 +40,13 @@ body{
 }
 h1{
     font-size: 2.5rem;
-    margin-bottom: 4rem;
+    padding: 2rem;
 }
 .container{
     width: 65rem;
-    height: 50rem;
     display: flex;
     margin: 0 auto;
+    margin-bottom: 3rem;
     background-color: var(--White);
     box-shadow: 0.5rem 2rem 4rem rgba(0,0,0,0.1);
     border-radius: 4rem;
@@ -91,32 +91,32 @@ h1{
     height: 100%;
     border-radius: 4rem;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
-    padding: 4rem;
     color: var(--Persian-blue-circle);
 }
 
 .card-summary h1{
+    padding: 2rem;
+    margin: 4rem 0 0 0;
     color: var(--Dark-gray-blue);
 }
 
 .button{
     background-color: var(--Dark-gray-blue);
     border: none;
+    width: 80%;
+    margin: 0 auto;
     cursor: pointer;
     padding: 1.3rem;
     border-radius: 2rem;
     color: var(--White);
     transition: all 1s ease-in-out;
+
 }
 
 .button:hover{
     background-image: linear-gradient(180deg, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
-    border: none;
-    padding: 1.3rem;
-    border-radius: 2rem;
-    color: var(--White);
-    transition: all 1s ease-in-out;
 }
 
 .reaction,
@@ -127,8 +127,9 @@ h1{
     font-size: 1.8rem;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
     padding: 1.3rem;
-    margin: 0 0 1.5rem 0;
+    margin: 1rem auto;
     border-radius: 0.8rem;
     cursor: default;
 }
@@ -184,4 +185,51 @@ h1{
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+}
+
+.links{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.links p{
+    color: var(--Dark-gray-blue);
+    text-align: center;
+    font-size: 1.6rem;
+}
+.links p a{
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+.links p a:hover {
+    color: var(--Cobalt-blue);
+}
+
+@media (max-width: 480px){
+    .container{
+        min-height: 100dvh;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .card-result{
+        width: 100%;
+        border-radius: 0 0 4rem 4rem;
+    }
+
+    .card-summary{
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .card-summary h1{
+        padding: 2rem;
+        margin: 0;
+        color: var(--Dark-gray-blue);
+    }
+    .links{
+        padding: 1rem;
+    }
 }
