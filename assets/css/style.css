@@ -24,6 +24,7 @@
     box-sizing: border-box;
     font-family: "Hanken Grotesk", serif;
     color: var(--Light-lavender);
+    cursor: default;
 }
 html{
     font-size: 62.5%;
@@ -111,8 +112,7 @@ h1{
     padding: 1.3rem;
     border-radius: 2rem;
     color: var(--White);
-    transition: all 1s ease-in-out;
-
+    transition: all 250ms ease;
 }
 
 .button:hover{
@@ -201,6 +201,7 @@ h1{
 .links p a{
     text-decoration: none;
     transition: all 200ms ease-in-out;
+    cursor: pointer;
 }
 .links p a:hover {
     color: var(--Cobalt-blue);
