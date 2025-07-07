@@ -1,6 +1,6 @@
  <!-- MODELO PROJETO FINALIZADO -->
 <h1 align="center"> 
-	  🚀✅ 08_results-summary-component-main ✅🚀
+	  🚀✅ results-summary-component-main ✅🚀
 </h1>
 
 <!-- ---------------------------------------------------------------------- -->
